@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yourecipe｜皆ののレシピ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yourecipeにレシピを投稿できるし、共有しやすい,簡単なレシピ,ダイエット,健康,安い材料,フォーベトナム料理,パーティー,オフ会" />
+    <meta name="author" content="「チャン　コン　ハン「Tran cong hanh」" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/icon.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+            <link rel="stylesheet" href="css/ie.css" type="text/css" media="all" />
+            <script src="js/PIE_IE678.js"></script>
+        <![endif]-->
+    <!-- Le fav and touch icons -->
+</head>
+
+<body>
+    <header class="header-page">
+        <div class="yr-top-nav clearfix">
+            <div class="yr-wrapper">
+                <div class="yr-han clearfix">
+                    <div class="yr-main">
+                        <div class="random-news clearfix">
+                            <h4 class="random-title">Pickup:</h4>
+                            <div class="yr-header">
+                                <ul class="clearfix">
+                                    <li><a href="#">やみつきピーマン</a></li>
+                                    <li><a href="#">しらす人参卵焼き</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user yr-sidebar">
+                        <ul class="clearfix">
+                            <li><span data-icon="&#xe98d;"></span><a href="#">ログイン</a></li>
+                            <li><span data-icon="&#xea13;"></span><a href="#">会員登録</a></li>
+                            <li><span data-icon="&#xe94b;"></span><a href="#">サイトマップ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end ys-top-nav-->
+        <div class="yr-top-main">
+            <div class="yr-wrapper">
+                <div class="yr-han clearfix">
+                    <div class="yr-main clearfix">
+                        <div class="yr-logo clearfix">
+                            <a href="index.html"><img src="img/logo/logo.png" alt="ysshoku" title="毎日ちゃんとご飯"></a>
+                            <div class="mobile">
+                                <div class="toggle toggle--move">
+                                    <span>モバイル</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yr-search top-column">
+                            <form class="search-form clearfix" action="search.php" method="get">
+                                <span class="icon-search" data-icon="&#xe986;"></span>
+                                <input class="search-text" type="search " name="searchs" onblur="if (this.value == '')
+                                    this.value = this.defaultValue;" onfocus="if (this.value == this.defaultValue)
+                                    this.value = '';" value="何のレシピを探している?" label>
+                                <input class="search-su" type="submit" name="submit" value="検索">
+                            </form>
+                            <div class="keyword">
+                                <h4>キーワード:</h4>
+                                <ul class="key clearfix">
+                                    <li><a href="">大根</a></li>
+                                    <li><a href="">牛肉</a>
+                                        <li><a href="">スープ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yr-save-like yr-sidebar">
+                        <ul class="like clearfix">
+                            <li><a href="#"><span data-icon="&#xe906;">レシピを書く</span></a></li>
+                            <li><a href="#"><span data-icon="&#xe9da;">気になるレシピ</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="navi yr-wrapper">
+                    <nav class="yr-main-nav">
+                        <ul class="clearfix">
+                            <li><a href="category.html"><span data-icon="&#xe9bb;">カテゴリー</span></a></li>
+                            <li><a href="maker.html"><span data-icon="&#xe972;">料理家</span></a></li>
+                            <li><a href="susume.html"><span data-icon="&#xe9d7;">おすすめ</span></a></li>
+                            </li>
+                            <li><a href="ranking.html"><span data-icon="&#xe9d3;">ランキング</span></a></li>
+                            </li>
+                            <li><a href="video.html"><span data-icon="&#xe92a;">動画</span></a></li>
+                            </li>
+                            <li><a href="vietnam.html"><span data-icon="&#xe9cc;">ベトナム料理</span></a></li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--end navi-->
+        </div>
+        <!--end ys-top-nav-->
+    </header>
+    <!--end header-->
+    <div class="content">
+        <div class="yr-wrapper">
+            <div class="yr-han clearfix">
+                <div class="yr-main">
+                    <div class="today">
+                        <h1 class="yr-headline-title"><span>today recipe</span><a href="#">今日のレシピ</a></h1>
+                        <div class="flexslider home-slider loading yr-today-article clearfix">
+                            <ul class="slides">
+                                <li>
+                                    <div class="today-thumb">
+                                        <img src="img/recipe/piuman1.jpg" alt="" title="バレンタイン">
+                                    </div>
+                                    <div class="recipe-content">
+                                        <h4 class="item-title"><a href="">やみつきピーマン </a></h4>
+                                        <div class="static">
+                                            <span data-icon="&#xe971;">ハン</span>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                            <span data-icon="&#xe96f;">2016・2・8</span>
+                                        </div>
+                                        <p>やみつきピーマン簡単なやり方誰でも作れると思います</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="today-thumb">
+                                        <img src="img/recipe/sup.jpg" alt="" title="バレンタイン">
+                                    </div>
+                                    <div class="recipe-content">
+                                        <h4 class="item-title"><a href="">大根と牛肉のスープ</a></h4>
+                                        <div class="static">
+                                            <span data-icon="&#xe971;">ハン</span>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                            <span data-icon="&#xe94f;">2016・2・8</span>
+                                        </div>
+                                        <p>ココアで簡単なやり方誰でも作れると思います。きれいなココアパンを作りましょう...</p>
+                                        ]]]] </div>
+                                </li>
+                                <li>
+                                    <div class="today-thumb">
+                                        <img src="img/recipe/nem.jpg" alt="" title="丸末期">
+                                    </div>
+                                    <div class="recipe-content">
+                                        <h4 class="item-title"><a href="">ベトナム焼き丸末期</a></h4>
+                                        <div class="static">
+                                            <span data-icon="&#xe971;">ハン</span>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                            <span data-icon="&#xe94f;">2016・2・8</span>
+                                        </div>
+                                        <p>日本にベトナム料理でNo2人気がある料理です。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end ys-recipe-today-->
+                    <div class="ranking">
+                        <h1 class="yr-headline-title"><span>ranking</span><a href="#">ランキング</a></h1>
+                        <div class="yr-ranking-article clearfix">
+                            <ul class="clearfix">
+                                <li>
+                                    <article class="ranking-item clearfix">
+                                        <div class="item-thumb">
+                                            <a href="#"><img src="img/recipe/today-recipe.jpg" alt="item1"></a>
+                                            <div class="ranks"><img src="img/rank1.png" alt=""></div>
+                                        </div>
+                                        <div class="item-content">
+                                            <header class="static clearfix">
+                                                <span class="date">2016・2・8</span>
+                                                <span class="time"><span data-icon="&#xe94f;">20分</span></span>
+                                            </header>
+                                            <h4 class="item-title"><a href="#">冬に豚汁ぴったり</a></h4>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="ranking-item clearfix">
+                                        <div class="item-thumb">
+                                            <a href="#"><img src="img/recipe/today-recipe.jpg" alt="item1"></a>
+                                            <div class="ranks"><img src="img/rank2.png" alt=""></div>
+                                        </div>
+                                        <div class="item-content">
+                                            <header class="static clearfix">
+                                                <span class="date">2016・2・8</span>
+                                                <span class="time"><span data-icon="&#xe94f;">20分</span></span>
+                                            </header>
+                                            <h4 class="item-title"><a href="#">冬に豚汁ぴったり</a></h4>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="ranking-item clearfix">
+                                        <div class="item-thumb">
+                                            <a href="#"><img src="img/recipe/sup.jpg" alt="item1"></a>
+                                            <div class="ranks"><img src="img/rank3.png" alt=""></div>
+                                        </div>
+                                        <div class="item-content">
+                                            <header class="static clearfix">
+                                                <span class="date">2016・2・8</span>
+                                                <span class="time"><span data-icon="&#xe94f;">20分</span></span>
+                                            </header>
+                                            <h4 class="item-title"><a href="#">大根と牛肉のスープ</a></h4>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end ranking-->
+                    <div class="susume">
+                        <h1 class="yr-headline-title"><span>Reccommend</span><a href="#">おすすめ</a></h1>
+                        <div class="yr-content">
+                            <ul>
+                                <li>
+                                    <article class="susume-item clearfix">
+                                        <div class="item-thumb">
+                                            <a href="#"><img src="img/recipe/sarada.jpg" alt="item1"></a>
+                                        </div>
+                                        <div class="item-content">
+                                            <header>
+                                                <h4 class="item-title"><a href="#">簡単なポテトサラダ</a></h4>
+                                                <div class="static clearfix">
+                                                    <span class="author">ハンさん</span>
+                                                    <span class="date">2016・2・8</span>
+                                                    <span class="time"><span data-icon="&#xe94f;">20分</span></span>
+                                                </div>
+                                            </header>
+                                            <p>家で簡単なポテトサラダは誰でも作れるし、ダイエットの方や又は肌がきれいになりたい人とあっています。</p>
+                                            <div class="view">
+                                                <a class="readmore" href="">動画を見る</a>
+                                                <a class="readmore" href="">さらに詳しく</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="susume-item clearfix">
+                                        <div class="item-thumb">
+                                            <a href="#"><img src="img/recipe/piuman1.jpg" alt="item1"></a>
+                                        </div>
+                                        <div class="item-content">
+                                            <header>
+                                                <h4 class="item-title"><a href="#">やみつきピーマン </a></h4>
+                                                <div class="static clearfix">
+                                                    <span class="author">ハンさん</span>
+                                                    <span class="date">2016・2・8</span>
+                                                    <span class="time"><span data-icon="&#xe94f;">20分</span></span>
+                                                </div>
+                                            </header>
+                                            <p>やみつきピーマンレシピを５分だけで誰でも作れる</p>
+                                            <div class="view">
+                                                <a class="readmore" href="">動画を見る</a>
+                                                <a class="readmore" href="">さらに詳しく</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="susume-item clearfix">
+                                        <div class="item-thumb">
+                                            <a href="#"><img src="img/recipe/sup.jpg" alt="item1"></a>
+                                        </div>
+                                        <div class="item-content">
+                                            <header>
+                                                <h4 class="item-title"><a href="#">冬に豚汁ぴったり</a></h4>
+                                                <div class="static clearfix">
+                                                    <span class="author">ハンさん</span>
+                                                    <span class="date">2016・2・8</span>
+                                                    <span class="time"><span data-icon="&#xe94f;">20分</span></span>
+                                                </div>
+                                            </header>
+                                            <p>20分だけで簡単な大根と人参牛肉のスープを作りました。皆さまも作ってみましょうね。</p>
+                                            <div class="view">
+                                                <a class="readmore" href="">動画を見る</a>
+                                                <a class="readmore" href="">さらに詳しく</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end susume-->
+                    <div class="users clearfix">
+                        <div class="user-make">
+                            <h1 class="yr-headline-title"><span>recommend</span><a class="title-center" href="#">おすすめ料理家</a></h1>
+                            <div class="item-content">
+                                <header class="clearfix">
+                                    <div class="user-thumb">
+                                        <a href="#"><img src="img/truelove.jpg" alt=""></a>
+                                    </div>
+                                    <div class="user-content">
+                                        <h4 class="item-title"><a href="#">ハンさん</a></h4>
+                                        <div class="static">
+                                            <span data-icon="&#xe9da;">like:14 <span>Recipe:20</span></span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="item-article">
+                                    <h4><a href="">料理家の声</a></h4>
+                                    <p>Youreicpeの一般全員として レシピを投稿して自分の料理を共有できて本当に私の楽しみです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end user-make-->
+                        <div class="user-reicpe-rank">
+                            <h1 class="yr-headline-title"><span>user's ranking</span><a class="title-center" href="#">最近レシピが増えた料理家</a></h1>
+                            <div class="item-content">
+                                <ul>
+                                    <li>
+                                        <article class="clearfix">
+                                            <div class="r-1"><img src="img/r1.png" alt=""></div>
+                                            <a class="user-thumb user-rank " href=""><img src="img/hanh.jpg" alt=""></a>
+                                            <div class="user-content">
+                                                <h4 class="item-title"><a href="">ばばさん</a></h4>
+                                                <div class="user-entry">
+                                                    <p>料理をつくるのは私の楽しみです。</p>
+                                                    <div class="static">
+                                                        <span data-icon="&#xe9da;">like:14 <span>Recipe:20</span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="clearfix">
+                                            <div class="r-1"><img src="img/r2.png" alt=""></div>
+                                            <a class="user-thumb user-rank " href=""><img src="img/hieu.jpg" alt=""></a>
+                                            <div class="user-content">
+                                                <h4 class="item-title"><a href="">宮崎さん</a></h4>
+                                                <div class="user-entry">
+                                                    <p>毎日ちゃんとご飯</p>
+                                                    <div class="static">
+                                                        <span data-icon="&#xe9da;">like:14 <span>Recipe:20</span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="clearfix">
+                                            <div class="r-1"><img src="img/r3.png" alt=""></div>
+                                            <a class="user-thumb user-rank " href=""><img src="img/henryhieu.jpg" alt=""></a>
+                                            <div class="user-content">
+                                                <h4 class="item-title"><a href="">t卓さん</a></h4>
+                                                <div class="user-entry">
+                                                    <p>いつもレシピの雑誌を見る。。</p>
+                                                    <div class="static">
+                                                        <span data-icon="&#xe9da;">like:14 <span>Recipe:20</span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end user-->
+                    <div class="season">
+                        <h1 class="yr-headline-title"><span>seasonal menu</span><a href="#">旬の献立</a></h1>
+                        <div class="season-content">
+                            <ul class="clearfix">
+                                <li class="season-list">
+                                    <div class="item-thumb">
+                                        <a href=""><img src="img/recipe/sarada.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="item-title"><a href="">ポテトサラダ</a></h4>
+                                        <div class="static">
+                                            <a href=""><span data-icon="&#xe971;">ハンさん</span></a>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="season-list">
+                                    <div class="item-thumb">
+                                        <a href=""><img src="img/recipe/kaki.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="item-title"><a href="">かきフライ</a></h4>
+                                        <div class="static">
+                                            <a href=""><span data-icon="&#xe971;">ハンさん</span></a>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="season-list">
+                                    <div class="item-thumb">
+                                        <a href=""><img src="img/recipe/sup.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="item-title"><a href="">大根牛肉みそ</a></h4>
+                                        <div class="static">
+                                            <a href=""><span data-icon="&#xe971;">ハンさん</span></a>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="season-list">
+                                    <div class="item-thumb">
+                                        <a href=""><img src="img/recipe/kaki.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="item-title"><a href="">かきフライ</a></h4>
+                                        <div class="static">
+                                            <a href=""><span data-icon="&#xe971;">ハンさん</span></a>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="season-list">
+                                    <div class="item-thumb">
+                                        <a href=""><img src="img/recipe/sup.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="item-title"><a href="">大根牛肉みそ</a></h4>
+                                        <div class="static">
+                                            <a href=""><span data-icon="&#xe971;">ハンさん</span></a>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="season-list">
+                                    <div class="item-thumb">
+                                        <a href=""><img src="img/recipe/sarada.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="item-title"><a href="">ポテトサラダ</a></h4>
+                                        <div class="static">
+                                            <a href=""><span data-icon="&#xe971;">ハンさん</span></a>
+                                            <span data-icon="&#xe94f;">10分</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end season-->
+                    <div class="channel">
+                        <h1 class="yr-headline-title"><span>channel</span><a href="#">Youtubeチャネル</a></h1>
+                        <div class="channel-content clearfix">
+                            <div class="video">
+                                <iframe width="250" height="250" src="https://www.youtube.com/embed/ssxzebwViJs" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="channel-content-right">
+                                <h4 class="item-title"><a href="">料理家の声</a></h4>
+                                <div class="avatar clearfix"><img src="img/truelove.jpg" alt=""><a href="">ハンさん</a></div>
+                                <div>
+                                    <p>Youreicpeの一般全員として レシピを投稿して自分の料理を共有できて本当に私の楽しみです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end channel-->
+                </div>
+                <div class="yr-sidebar">
+                    <div class="news">
+                        <h1 class="yr-headline-title"><span>News</span><a href="#">お知らせ</a></h1>
+                        <ul>
+                            <li><a href="">パーティー開催第１</a><span>2016・3月7日</span></li>
+                            <li><a href="">ダイエットのセミナー</a><span>2016・3月1日</li>
+                            <li><a href="">新投稿の機能について</a><span>2016・2月7日</li>
+                            <li><a href="">日本にあるベトナム料理店</a><span>2016・2月8日</li>
+                            <li><a href="">春に何か食べるべきのか</a><span>2016・2月10日</li>
+                        </ul>
+                    </div>
+                    <div class="ads-1">
+                        <a href=""><img src="img/banner/banner.png" alt=""></a>
+                    </div>
+                    <div class="ads-2">
+                        <a href=""><img src="img/banner/banner-1.png" alt=""></a>
+                    </div>
+                    <div class="article-static">
+                        <div class="newest">
+                            <div class="clearfix">
+                                <ul class="tab-menu">
+                                    <li class="tab-link active" data-tab="tab1">
+                                        <a href="#tab1">最新レシピ</a>
+                                    </li>
+                                    <li class="tab-link" data-tab="tab2">
+                                        <a href="#tab2">新着献立</a>
+                                    </li>
+                                    <li class="tab-link" data-tab="tab3">
+                                        <a href="#tab3">皆の声</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div id="tab1" class="tab active">
+                                    <ul>
+                                        <li>
+                                            <div class="static-title">
+                                                <a href=""><img src="img/han.png" alt=""><span>クリーミーな☆シェパードパイ</span></a>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="static-title">
+                            <a href=""><img src="img/han.png" alt=""><span>美肌コラーゲンたっぷりの前菜ピュング</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="static-title">
+                            <a href=""><img src="img/han.png" alt=""><span>クリーミーな☆シェパードパイ</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="static-title">
+                            <a href=""><img src="img/han.png" alt=""><span>美肌コラーゲンたっぷりの前菜ピュング</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="static-title">
+                            <a href=""><img src="img/han.png" alt=""><span>クリーミーな☆シェパードパイ</span></a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                <div id="tab2" class="tab">
+                    <ul>
+                        <li>
+                            <div class="static-title">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダル</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab3" class="tab">
+                    <ul>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダル</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="static-title">
+                                <a href=""><img src="img/han.png" alt=""><span>れんこんめんたいサラダ</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ads-3">
+        <a href=""><img src="img/banner/banner-2.png" alt=""></a>
+    </div>
+    </div>
+    <!--end yr-sidebar-->
+    </div>
+    <!--end yr-main-->
+    </div>
+    </div>
+    <!--end content-->
+    <footer>
+        <div class="footer-top">
+            <div class="yr-wrapper">
+                <div class="yr-han clearfix">
+                    <div class="yr-main">
+                        <div class="footer-col">
+                            <h4>レシピを探す</h4>
+                            <ul>
+                                <li><a href="">お肉のおかず</a></li>
+                                <li><a href="">魚のおかず</a></li>
+                                <li><a href="">みそ汁・スープ</a></li>
+                                <li><a href="">鍋のもの</a></li>
+                                <li><a href="">パン</a></li>
+                                <li><a href="">炒めもの</a></li>
+                                <li><a href="">野菜</a></li>
+                                <li><a href="">その他の</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>ダイエットの方</h4>
+                            <ul>
+                                <li><a href="">サラダのおかず</a></li>
+                                <li><a href="">フルーツ</a></li>
+                                <li><a href="">おべんとう</a></li>
+                            </ul>
+                            <h4>献立</h4>
+                            <ul>
+                                <li><a href="">朝ごはん</a></li>
+                                <li><a href="">昼食</a></li>
+                                <li><a href="">夕食</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>おすすめレシピ</h4>
+                            <ul>
+                                <li><a href="">生丸末期</a></li>
+                                <li><a href="">焼き丸末期</a></li>
+                                <li><a href="">フォー</a></li>
+                            </ul>
+                            <h4>おすすめ食材</h4>
+                            <ul>
+                                <li><a href="">野菜</a></li>
+                                <li><a href="">魚</a></li>
+                                <li><a href="">お肉</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="yr-sidebar">
+                        <div class="subcribe">
+                            <h4 class="yr-headline-title">最新レシピはメールで登録</h4>
+                            <form action="#" method="get">
+                                <input class="search-text" type="search" name="searchs" onblur="if (this.value == '')
+                                    this.value = this.defaultValue;" onfocus="if (this.value == this.defaultValue)
+                                    this.value = '';" value="最新れしぴを登録しましょう" label>
+                                <input class="search-su" type="submit" name="submit" value="登録">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="yr-wrapper">
+                <div class="yr-han clearfix">
+                    <div class="yr-main">
+                        <div class="nav-bot">
+                            <ul class="clearfix">
+                                <li><a href="">yourecipeとは</a></li>
+                                <li><a href="">お問い合わせ</a></li>
+                                <li><a href="">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="yr-sidebar">
+                        <div class="copyright">
+                            <p>Copyright &copy; 2016 yourecipe.All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="scrolltop" href=""><span data-icon="&#xe9a3;"></span></a>
+        </div>
+    </footer>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/yourecipe.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/modernizr-transitions.js"></script>
+    <script src="js/PIE_IE678.js"></script>
+    <script src="js/retina.js"></script>
+    <script>
+    console.log('This page has ' + $('*').length + ' elements!');
+    </script>
+</body>
+
+</html>

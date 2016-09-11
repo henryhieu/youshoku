@@ -1,0 +1,13 @@
+@mixin transition($atai){
+        transition: $atai;
+}
+@mixin transition-vis($atai1,$atai2){
+        transition:($atai1,$atai2);
+}
+@mixin transform($transform){
+        transform: $transform;
+}
+
+@mixin filter($filter){
+	filter:$filter;
+}

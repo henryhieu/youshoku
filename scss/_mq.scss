@@ -1,0 +1,19 @@
+// breakpoints
+   
+$S:     600px;   
+$M:     1024px;     
+$L:     1170px;     
+
+// media queries
+
+@mixin MQ($device) {
+  @if $device == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $device == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $device == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}

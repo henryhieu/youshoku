@@ -1,0 +1,139 @@
+@mixin box($bor) {
+    -webkit-box-sizing: $bor;
+    -moz-box-sizing: $bor;
+    box-sizing: $bor;
+}
+
+%clearfix {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+@mixin list-style($list-style) {
+    list-style: $list-style;
+}
+
+@mixin float($float) {
+    float: $float;
+}
+
+@mixin display($display) {
+    display: $display;
+}
+
+@mixin text($text-align) {
+    text-align: $text-align;
+}
+
+@mixin textunder($under) {
+    text-decoration: $under;
+}
+
+@mixin position($po) {
+    position: $po;
+}
+
+@mixin transform($trans) {
+    -webkit-transform: $trans;
+    -moz-transform: $trans;
+    -ms-transform: $trans;
+    -o-transform: $trans;
+    transform: $trans;
+}
+
+@mixin boxstyle($bk, $border) {
+    background: $bk;
+    border: 1px solid $border;
+}
+
+@mixin font-weight($atai) {
+    font-weight: $atai;
+}
+
+@mixin tit($fon, $color, $val, $fon-c, $span-font) {
+    .yr-headline-title {
+        font-size: $fon;
+        padding: 1rem;
+        @include text(center);
+        @include position(relative);
+        background: $grey;
+        @include MQ(S) {
+            background: none;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding: 1rem;
+            @include MQ(S) {
+                padding: $val;
+                background: $color;
+            }
+            color: $fon-c;
+            font-size:$span-font;
+            text-transform: capitalize;
+            &:hover{
+            	color: $fon-c;
+            }
+        }
+        a {
+            color: $white;
+            @include MQ(S) {
+                color: $grey;
+            }
+        }
+        :hover{
+        	color: $green;
+        }
+    }
+}
+
+%transiton {
+    -webkit-overflow-scrolling: touch;
+    transition: visibility 0s 0.6s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+%font-smoot{
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// font color
+$font12:1.2rem;
+$font14:1.4rem;
+$font16:1.6rem;
+$font20:2rem;
+$font24:2.4rem;
+$font36:3.6rem;
+$header-bk:#FBFBBD;
+$yellow-s:#E4DDA3;
+$yellow-h:#E8D161;
+$white:#fff;
+$grey:#552200;
+$grey-s:#963D02;
+$red:#BF082E;
+$yellow:#ffc300;
+$black:#000;
+$blue:#0A99AE;
+$green:#457D00;
+$orange:#C1640E;
+$bk:#F7F7CC;
+$border-c:#E4D9D2;
+$article-bk:#E6E6AC;

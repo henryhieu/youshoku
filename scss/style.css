@@ -1,0 +1,2770 @@
+.clearfix:before, .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden; }
+
+.main-menu {
+  -webkit-overflow-scrolling: touch;
+  transition: visibility 0s 0.6s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
+
+.main-menu .yr-main-nav li a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix {
+  zoom: 1; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  transition: all 0.4s; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7CC;
+  font-size: 1.4rem;
+  color: #552200;
+  line-height: 1.4;
+  -webkit-overflow-scrolling: touch; }
+  @media only screen and (min-width: 1024px) {
+    body {
+      font-size: 1.6rem; } }
+
+.yr-wrapper {
+  width: 95%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 1024px) {
+    .yr-wrapper {
+      width: 85%;
+      max-width: 1000px; } }
+
+.header-page {
+  background-color: #FBFBBD;
+  zoom: 1;
+  font-size: 1.4rem; }
+  .header-page li {
+    list-style: none; }
+
+.yr-main {
+  width: 70%;
+  padding-right: 2.5%;
+  float: left;
+  position: relative; }
+
+.yr-sidebar {
+  width: 30%;
+  height: 100%;
+  padding-left: 2.5%;
+  float: left;
+  position: relative;
+  z-index: 0; }
+
+.user [data-icon]:before {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .user [data-icon]:before {
+      margin-right: 1rem;
+      color: #552200; } }
+
+.yr-top-nav {
+  padding: 1em 0;
+  background: #E4DDA3;
+  position: relative; }
+  .yr-top-nav .yr-main {
+    width: 100%;
+    padding: 0;
+    display: block; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-nav .yr-main {
+        width: 70%; } }
+  .yr-top-nav .yr-sidebar {
+    width: 100%;
+    padding: 0; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-nav .yr-sidebar {
+        width: 30%; } }
+  .yr-top-nav .random-news {
+    display: none;
+    overflow: hidden; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-nav .random-news {
+        display: block; }
+        .yr-top-nav .random-news .random-title {
+          float: left;
+          margin-right: 1em; }
+        .yr-top-nav .random-news .yr-header {
+          white-space: nowrap;
+          display: inline-block; }
+          .yr-top-nav .random-news .yr-header li {
+            display: inline-block;
+            margin-left: 20%; }
+            .yr-top-nav .random-news .yr-header li a {
+              color: #552200; }
+              .yr-top-nav .random-news .yr-header li a:hover {
+                color: #457D00; } }
+  .yr-top-nav .user li {
+    width: 33.3333%;
+    float: left;
+    text-align: center; }
+    .yr-top-nav .user li a {
+      color: #552200; }
+      .yr-top-nav .user li a:hover {
+        text-decoration: underline; }
+
+.yr-top-main {
+  margin-top: 2rem;
+  position: relative; }
+  .yr-top-main .yr-main {
+    width: 100%;
+    padding: 0;
+    display: block; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-main .yr-main {
+        width: 70%;
+        padding-right: 2.5%; } }
+  .yr-top-main .yr-sidebar {
+    width: 100%;
+    padding: 0; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-main .yr-sidebar {
+        width: 30%;
+        padding-left: 2.5%; } }
+  .yr-top-main .yr-logo {
+    position: relative;
+    display: block; }
+    .yr-top-main .yr-logo img {
+      width: 70%;
+      float: left;
+      margin-right: 2rem; }
+      @media only screen and (min-width: 600px) {
+        .yr-top-main .yr-logo img {
+          width: 100%;
+          margin-top: 1rem; } }
+    .yr-top-main .yr-logo .mobile {
+      position: absolute;
+      top: 50%;
+      right: -2%;
+      float: right;
+      transform: translateY(-50%);
+      display: inline;
+      z-index: 20; }
+      @media only screen and (min-width: 600px) {
+        .yr-top-main .yr-logo .mobile {
+          display: none; } }
+      .yr-top-main .yr-logo .mobile .toggle {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 96px;
+        height: 96px;
+        font-size: 0;
+        text-indent: -9999px;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        border-radius: none;
+        cursor: pointer;
+        transition: background 0.5s; }
+        .yr-top-main .yr-logo .mobile .toggle:focus {
+          outline: none; }
+        .yr-top-main .yr-logo .mobile .toggle span {
+          display: block;
+          position: absolute;
+          top: 44px;
+          left: 18px;
+          right: 18px;
+          height: 8px;
+          background: #552200; }
+          .yr-top-main .yr-logo .mobile .toggle span::before {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #552200;
+            content: "";
+            top: -20px; }
+          .yr-top-main .yr-logo .mobile .toggle span::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #552200;
+            content: "";
+            bottom: -20px; }
+      .yr-top-main .yr-logo .mobile .toggle--move span {
+        transition: transform 0.5s; }
+        .yr-top-main .yr-logo .mobile .toggle--move span::before {
+          transform-origin: top right;
+          transition: transform 0.5s, width 0.5s, top 0.5s; }
+        .yr-top-main .yr-logo .mobile .toggle--move span::after {
+          transform-origin: bottom right;
+          transition: transform 0.5s, width 0.5s, bottom 0.5s; }
+      .yr-top-main .yr-logo .mobile .is-active {
+        background-color: #552200; }
+        .yr-top-main .yr-logo .mobile .is-active span {
+          transform: rotate(180deg);
+          background: #fff; }
+          .yr-top-main .yr-logo .mobile .is-active span::before {
+            width: 50%;
+            top: 0;
+            background: #fff;
+            transform: translateX(38px) translateY(4px) rotate(45deg); }
+          .yr-top-main .yr-logo .mobile .is-active span::after {
+            width: 50%;
+            bottom: 0;
+            background: #fff;
+            transform: translateX(38px) translateY(-4px) rotate(-45deg); }
+    @media only screen and (min-width: 600px) {
+      .yr-top-main .yr-logo {
+        float: left;
+        width: 30%;
+        margin-right: 4.5%; } }
+  .yr-top-main .yr-search {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem; }
+    .yr-top-main .yr-search input {
+      height: 40px; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-main .yr-search {
+        width: 63%; } }
+    .yr-top-main .yr-search .search-text {
+      width: 100%;
+      border: none;
+      background: #E4DDA3;
+      font-size: 1.2rem;
+      color: #552200;
+      padding-left: 2rem;
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+      @media only screen and (min-width: 600px) {
+        .yr-top-main .yr-search .search-text {
+          width: 80%; } }
+    .yr-top-main .yr-search .icon-search {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -25px;
+      margin-right: 20px;
+      display: block; }
+      @media only screen and (min-width: 600px) {
+        .yr-top-main .yr-search .icon-search {
+          display: none; } }
+    .yr-top-main .yr-search .search-su {
+      display: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .yr-top-main .yr-search .search-su {
+          display: inline;
+          width: 18%;
+          background-color: #552200;
+          border: none; } }
+    .yr-top-main .yr-search .keyword h4 {
+      margin-top: 1rem;
+      float: left; }
+    .yr-top-main .yr-search .key {
+      margin: 1rem 1rem;
+      width: 60%;
+      float: left; }
+      @media only screen and (min-width: 600px) {
+        .yr-top-main .yr-search .key {
+          margin-top: 0.5rem; } }
+      .yr-top-main .yr-search .key a {
+        float: left;
+        text-align: center;
+        margin-right: 0.1rem;
+        font-size: 1.2rem;
+        color: #552200; }
+        @media only screen and (min-width: 600px) {
+          .yr-top-main .yr-search .key a {
+            padding: 0.3rem;
+            font-size: 1.4rem;
+            background: #552200;
+            color: #FBFBBD;
+            width: 32%; } }
+  .yr-top-main .yr-save-like {
+    margin-top: 2rem; }
+    .yr-top-main .yr-save-like .like li {
+      width: 49.5%;
+      float: left;
+      margin: 0;
+      text-align: center;
+      margin: 0.25%; }
+      .yr-top-main .yr-save-like .like li a {
+        padding: 1.4rem 1rem;
+        display: block;
+        background: #457D00;
+        border-radius: 2px;
+        color: #fff; }
+      .yr-top-main .yr-save-like .like li [data-icon]:before {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        display: inline;
+        font-size: 1.4rem; }
+        @media only screen and (min-width: 600px) {
+          .yr-top-main .yr-save-like .like li [data-icon]:before {
+            font-size: 2rem;
+            display: block; } }
+      .yr-top-main .yr-save-like .like li:last-child a {
+        background: #BF082E; }
+    @media only screen and (min-width: 600px) {
+      .yr-top-main .yr-save-like {
+        margin-top: 0; } }
+
+.main-menu {
+  display: none;
+  position: absolute;
+  top: -8%;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  background: #552200;
+  font-size: 1.4rem;
+  font-weight: 700; }
+  @media only screen and (min-width: 600px) {
+    .main-menu {
+      position: relative;
+      right: 0;
+      height: 100%;
+      display: block;
+      overflow: visible; } }
+  .main-menu .yr-main-nav {
+    margin-top: 2rem; }
+    .main-menu .yr-main-nav li {
+      width: 100%;
+      float: none;
+      display: block;
+      text-align: left; }
+      @media only screen and (min-width: 600px) {
+        .main-menu .yr-main-nav li {
+          width: 10.1rem;
+          float: left;
+          text-align: center; } }
+      .main-menu .yr-main-nav li .active {
+        color: #ffc300;
+        background: #963D02; }
+      .main-menu .yr-main-nav li a {
+        display: block;
+        position: relative;
+        padding: 2rem 0;
+        color: #E4DDA3;
+        transition: all 0.5s; }
+        .main-menu .yr-main-nav li a [data-icon]:before {
+          margin-right: 0.3rem; }
+          @media only screen and (min-width: 1024px) {
+            .main-menu .yr-main-nav li a [data-icon]:before {
+              margin-right: 0.5rem; } }
+        @media only screen and (min-width: 1024px) {
+          .main-menu .yr-main-nav li a {
+            padding: 2rem; } }
+        .main-menu .yr-main-nav li a :before {
+          transition: all 0.5s; }
+        .main-menu .yr-main-nav li a :after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '.';
+          color: transparent;
+          background: #ffc300;
+          height: 5px;
+          transition: all 0.5s; }
+        .main-menu .yr-main-nav li a:hover :after {
+          width: 100%; }
+      .main-menu .yr-main-nav li:hover a {
+        color: #ffc300; }
+      @media only screen and (min-width: 1024px) {
+        .main-menu .yr-main-nav li {
+          width: 143px; } }
+
+.menu-show {
+  display: block;
+  right: 0;
+  transition: visibility 0s 0s; }
+
+.content {
+  position: relative;
+  margin: 2.8rem 0; }
+  .content .yr-main {
+    width: 100%;
+    padding: 0;
+    display: block;
+    overflow: hidden; }
+    @media only screen and (min-width: 1024px) {
+      .content .yr-main {
+        width: 70%;
+        padding-right: 2.5%; } }
+  .content .yr-sidebar {
+    width: 100%;
+    padding: 0; }
+    @media only screen and (min-width: 1024px) {
+      .content .yr-sidebar {
+        width: 30%;
+        padding-left: 2.5%; } }
+  @media only screen and (min-width: 1024px) {
+    .content {
+      margin: 4.8rem 0; } }
+  .content .yr-main {
+    background: #F7F7CC; }
+
+.static {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #963D02; }
+  .static [data-icon]:before {
+    margin-right: 0.5rem; }
+
+.today {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .today .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .today .yr-headline-title {
+        background: none; } }
+    .today .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .today .yr-headline-title span {
+          padding: 1.2rem;
+          background: #457D00; } }
+      .today .yr-headline-title span:hover {
+        color: #fff; }
+    .today .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .today .yr-headline-title a {
+          color: #552200; } }
+    .today .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .today .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .today .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .today .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .today .yr-headline-title span {
+        padding: 1.2rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 600px) {
+        .today .yr-headline-title span:hover {
+          color: #fff; }
+      .today .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .today .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .today .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .today .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .today .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .today .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .today .yr-headline-title span {
+        padding: 1.6rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+        .today .yr-headline-title span:hover {
+          color: #fff; }
+      .today .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .today .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .today .yr-headline-title :hover {
+        color: #457D00; } }
+  .today .flex-direction-nav {
+    top: -50px; }
+    @media only screen and (min-width: 600px) {
+      .today .flex-direction-nav {
+        top: -56px; } }
+  .today .yr-today-article {
+    line-height: 2;
+    margin-bottom: 2rem;
+    padding: 2rem; }
+    @media only screen and (min-width: 1024px) {
+      .today .yr-today-article {
+        padding: 1rem; } }
+    .today .yr-today-article .today-thumb {
+      width: 100%;
+      display: block; }
+      @media only screen and (min-width: 600px) {
+        .today .yr-today-article .today-thumb {
+          width: 40%;
+          float: left; } }
+    .today .yr-today-article .recipe-content {
+      width: 100%;
+      padding: 0.5rem 2rem 1rem; }
+      @media only screen and (min-width: 600px) {
+        .today .yr-today-article .recipe-content {
+          width: 60%;
+          float: left; } }
+      .today .yr-today-article .recipe-content .recipe-title {
+        margin-bottom: 1rem; }
+        .today .yr-today-article .recipe-content .recipe-title a {
+          font-size: 1.6rem;
+          color: #552200; }
+      .today .yr-today-article .recipe-content p {
+        color: #000;
+        font-size: 1.4rem; }
+  .today .flex-control-nav {
+    bottom: -30px; }
+    @media only screen and (min-width: 600px) {
+      .today .flex-control-nav {
+        bottom: 0; } }
+
+.item-title {
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+  .item-title a {
+    color: #552200; }
+    .item-title a:hover {
+      color: #457D00; }
+
+.ranking {
+  margin-top: 2.8rem;
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  @media only screen and (min-width: 1024px) {
+    .ranking {
+      margin-top: 4.8rem; } }
+  .ranking .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .ranking .yr-headline-title {
+        background: none; } }
+    .ranking .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .ranking .yr-headline-title span {
+          padding: 1.2rem;
+          background: #552200; } }
+      .ranking .yr-headline-title span:hover {
+        color: #fff; }
+    .ranking .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .ranking .yr-headline-title a {
+          color: #552200; } }
+    .ranking .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .ranking .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .ranking .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .ranking .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .ranking .yr-headline-title span {
+        padding: 1.2rem;
+        background: #552200; } }
+  @media only screen and (min-width: 600px) {
+        .ranking .yr-headline-title span:hover {
+          color: #fff; }
+      .ranking .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .ranking .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .ranking .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .ranking .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .ranking .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .ranking .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .ranking .yr-headline-title span {
+        padding: 1.6rem;
+        background: #552200; } }
+  @media only screen and (min-width: 1024px) {
+        .ranking .yr-headline-title span:hover {
+          color: #fff; }
+      .ranking .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .ranking .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .ranking .yr-headline-title :hover {
+        color: #457D00; } }
+  .ranking .yr-ranking-article {
+    padding: 2rem 0; }
+    .ranking .yr-ranking-article li {
+      width: 100%;
+      list-style: none; }
+      .ranking .yr-ranking-article li .item-thumb, .ranking .yr-ranking-article li .item-content {
+        width: 90%;
+        margin: 0 auto;
+        position: relative; }
+        .ranking .yr-ranking-article li .item-thumb .ranks, .ranking .yr-ranking-article li .item-content .ranks {
+          position: absolute;
+          top: -15px;
+          right: -10px;
+          width: 35px;
+          height: 35px;
+          padding: 0.6em;
+          background: rgba(69, 125, 0, 0.85);
+          border-radius: 35px; }
+          @media only screen and (min-width: 600px) {
+            .ranking .yr-ranking-article li .item-thumb .ranks, .ranking .yr-ranking-article li .item-content .ranks {
+              top: -20px;
+              right: -20px;
+              width: 50px;
+              height: 50px;
+              border-radius: 50px; } }
+      @media only screen and (min-width: 600px) {
+        .ranking .yr-ranking-article li {
+          width: 30%;
+          margin: 0 1.6%;
+          float: left; } }
+
+.susume {
+  margin-top: 2.8rem;
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  @media only screen and (min-width: 1024px) {
+    .susume {
+      margin-top: 4.8rem; } }
+  .susume .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .susume .yr-headline-title {
+        background: none; } }
+    .susume .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .susume .yr-headline-title span {
+          padding: 1.2rem;
+          background: #E8D161; } }
+      .susume .yr-headline-title span:hover {
+        color: #fff; }
+    .susume .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .susume .yr-headline-title a {
+          color: #552200; } }
+    .susume .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .susume .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .susume .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .susume .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #552200;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .susume .yr-headline-title span {
+        padding: 1.2rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 600px) {
+        .susume .yr-headline-title span:hover {
+          color: #552200; }
+      .susume .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .susume .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .susume .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .susume .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .susume .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .susume .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #552200;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .susume .yr-headline-title span {
+        padding: 1.6rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 1024px) {
+        .susume .yr-headline-title span:hover {
+          color: #552200; }
+      .susume .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .susume .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .susume .yr-headline-title :hover {
+        color: #457D00; } }
+  .susume .yr-content {
+    width: 100%;
+    padding: 2rem 0; }
+    .susume .yr-content li {
+      margin-bottom: 2rem; }
+    .susume .yr-content .item-thumb, .susume .yr-content .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .susume .yr-content .item-content {
+      width: 100%; }
+      @media only screen and (min-width: 600px) {
+        .susume .yr-content .item-thumb, .susume .yr-content .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .susume .yr-content .item-content {
+          width: 30%;
+          float: left; } }
+    .susume .yr-content .item-content {
+      width: 100%;
+      padding: 0.5rem 2rem 1rem; }
+      .susume .yr-content .item-content p {
+        font-size: 1.4rem;
+        color: #000; }
+      .susume .yr-content .item-content span {
+        margin-right: 1rem; }
+      .susume .yr-content .item-content .view {
+        margin-top: 3rem; }
+        .susume .yr-content .item-content .view a {
+          padding: 0.5rem;
+          background: #457D00;
+          color: #fff;
+          margin-right: 2rem; }
+      @media only screen and (min-width: 600px) {
+        .susume .yr-content .item-content {
+          width: 70%;
+          float: left; } }
+
+.users {
+  margin-top: 2.8rem;
+  background: #F7F7CC;
+  border: 1px solid none; }
+  @media only screen and (min-width: 600px) {
+    .users {
+      background: #fff;
+      border: 1px solid #E4D9D2; } }
+  @media only screen and (min-width: 1024px) {
+    .users {
+      margin-top: 4.8rem; } }
+  .users .item-content {
+    padding: 2rem 0; }
+
+.user-make {
+  background: #fff;
+  border: 1px solid #E4D9D2;
+  width: 100%; }
+  .user-make .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .user-make .yr-headline-title {
+        background: none; } }
+    .user-make .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .user-make .yr-headline-title span {
+          padding: 1.2rem;
+          background: #457D00; } }
+      .user-make .yr-headline-title span:hover {
+        color: #fff; }
+    .user-make .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .user-make .yr-headline-title a {
+          color: #552200; } }
+    .user-make .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .user-make .yr-headline-title {
+      font-size: 1.4rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .user-make .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .user-make .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .user-make .yr-headline-title span {
+        padding: 1.2rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 600px) {
+        .user-make .yr-headline-title span:hover {
+          color: #fff; }
+      .user-make .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .user-make .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .user-make .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .user-make .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .user-make .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .user-make .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .user-make .yr-headline-title span {
+        padding: 1.2rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+        .user-make .yr-headline-title span:hover {
+          color: #fff; }
+      .user-make .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .user-make .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .user-make .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .user-make {
+      width: 40%;
+      float: left;
+      margin-right: 2rem; } }
+  .user-make .yr-headline-title {
+    text-align: center; }
+    @media only screen and (min-width: 1024px) {
+      .user-make .yr-headline-title {
+        text-align: right; } }
+  .user-make .user-thumb {
+    width: 30%;
+    float: left; }
+  .user-make .user-content {
+    float: left;
+    padding: 0.5rem 1rem; }
+  .user-make .item-article {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #FFF;
+    position: relative; }
+    .user-make .item-article h4 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem; }
+    .user-make .item-article p {
+      font-size: 1.2rem; }
+
+.user-reicpe-rank {
+  margin-top: 2.8rem;
+  background: #fff;
+  border: 1px solid #E4D9D2;
+  width: 100%; }
+  .user-reicpe-rank .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title {
+        background: none; } }
+    .user-reicpe-rank .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .user-reicpe-rank .yr-headline-title span {
+          padding: 1.2rem;
+          background: #C1640E; } }
+      .user-reicpe-rank .yr-headline-title span:hover {
+        color: #fff; }
+    .user-reicpe-rank .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .user-reicpe-rank .yr-headline-title a {
+          color: #552200; } }
+    .user-reicpe-rank .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .user-reicpe-rank .yr-headline-title {
+      font-size: 1.4rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .user-reicpe-rank .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title span {
+        padding: 1.2rem;
+        background: #C1640E; } }
+  @media only screen and (min-width: 600px) {
+        .user-reicpe-rank .yr-headline-title span:hover {
+          color: #fff; }
+      .user-reicpe-rank .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .user-reicpe-rank {
+      margin-top: 0; }
+      .user-reicpe-rank .yr-headline-title {
+        font-size: 1.6rem;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+        background: #552200; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title {
+        background: none; } }
+  @media only screen and (min-width: 1024px) {
+        .user-reicpe-rank .yr-headline-title span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          padding: 1rem;
+          color: #fff;
+          font-size: 1.2rem;
+          text-transform: capitalize; } }
+      @media only screen and (min-width: 1024px) and (min-width: 600px) {
+        .user-reicpe-rank .yr-headline-title span {
+          padding: 1.2rem;
+          background: #C1640E; } }
+  @media only screen and (min-width: 1024px) {
+          .user-reicpe-rank .yr-headline-title span:hover {
+            color: #fff; }
+        .user-reicpe-rank .yr-headline-title a {
+          color: #fff; } }
+      @media only screen and (min-width: 1024px) and (min-width: 600px) {
+        .user-reicpe-rank .yr-headline-title a {
+          color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+        .user-reicpe-rank .yr-headline-title :hover {
+          color: #457D00; } }
+  @media only screen and (min-width: 600px) {
+    .user-reicpe-rank {
+      background: #fff;
+      border: 1px solid #fff; } }
+  @media only screen and (min-width: 1024px) {
+    .user-reicpe-rank {
+      width: 56%;
+      float: left; } }
+  .user-reicpe-rank .yr-headline-title {
+    text-align: right; }
+    @media only screen and (min-width: 600px) {
+      .user-reicpe-rank .yr-headline-title {
+        text-align: center; } }
+    @media only screen and (min-width: 1024px) {
+      .user-reicpe-rank .yr-headline-title {
+        text-align: right; } }
+  .user-reicpe-rank li {
+    list-style: none;
+    margin-bottom: 2rem; }
+  .user-reicpe-rank .r-1 {
+    width: 10%;
+    float: left;
+    margin: 0 1rem;
+    transform: translateY(50%); }
+  .user-reicpe-rank .user-thumb > img {
+    width: 20%;
+    float: left;
+    margin-right: 2rem; }
+  .user-reicpe-rank .user-content {
+    float: left;
+    padding: 0.5rem 0;
+    width: 50%; }
+    .user-reicpe-rank .user-content h4 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem; }
+    .user-reicpe-rank .user-content p {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem; }
+
+.season {
+  margin-top: 2.8rem;
+  background: #fff;
+  border: 1px solid #E4D9D2;
+  width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .season {
+      margin-top: 4.8rem; } }
+  .season .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .season .yr-headline-title {
+        background: none; } }
+    .season .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .season .yr-headline-title span {
+          padding: 1.2rem;
+          background: #457D00; } }
+      .season .yr-headline-title span:hover {
+        color: #fff; }
+    .season .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .season .yr-headline-title a {
+          color: #552200; } }
+    .season .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .season .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .season .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .season .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .season .yr-headline-title span {
+        padding: 1.2rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 600px) {
+        .season .yr-headline-title span:hover {
+          color: #fff; }
+      .season .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .season .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .season .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .season .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .season .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .season .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .season .yr-headline-title span {
+        padding: 1.6rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+        .season .yr-headline-title span:hover {
+          color: #fff; }
+      .season .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .season .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .season .yr-headline-title :hover {
+        color: #457D00; } }
+  .season .season-content {
+    padding: 2rem 0; }
+  .season li {
+    float: left;
+    list-style: none;
+    width: 45%;
+    margin-left: 1.5rem; }
+    @media only screen and (min-width: 1024px) {
+      .season li {
+        width: 30%;
+        margin-left: 1.7rem; } }
+  .season h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem; }
+    .season h4 > a {
+      color: #552200; }
+  .season .item-content .static > a {
+    color: #552200; }
+
+.channel {
+  margin-top: 2.8rem;
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  @media only screen and (min-width: 1024px) {
+    .channel {
+      margin-top: 4.8rem; } }
+  .channel .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .channel .yr-headline-title {
+        background: none; } }
+    .channel .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .channel .yr-headline-title span {
+          padding: 1.2rem;
+          background: #BF082E; } }
+      .channel .yr-headline-title span:hover {
+        color: #fff; }
+    .channel .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .channel .yr-headline-title a {
+          color: #552200; } }
+    .channel .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .channel .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .channel .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .channel .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .channel .yr-headline-title span {
+        padding: 1.2rem;
+        background: #BF082E; } }
+  @media only screen and (min-width: 600px) {
+        .channel .yr-headline-title span:hover {
+          color: #fff; }
+      .channel .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .channel .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .channel .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .channel .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .channel .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .channel .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .channel .yr-headline-title span {
+        padding: 1.6rem;
+        background: #BF082E; } }
+  @media only screen and (min-width: 1024px) {
+        .channel .yr-headline-title span:hover {
+          color: #fff; }
+      .channel .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .channel .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .channel .yr-headline-title :hover {
+        color: #457D00; } }
+  .channel .channel-content {
+    padding: 2rem 0; }
+    .channel .channel-content .video {
+      width: 45%;
+      float: left;
+      padding-right: 2rem; }
+    .channel .channel-content .channel-content-right {
+      width: 50%;
+      padding: 0.5rem 0;
+      float: left; }
+      .channel .channel-content .channel-content-right h4 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem; }
+      .channel .channel-content .channel-content-right p {
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        background: #F7F7CC; }
+  .channel .avatar {
+    position: relative; }
+    .channel .avatar > img {
+      float: left;
+      width: 20%; }
+    .channel .avatar > a {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+      margin-left: 2rem; }
+
+.news {
+  background: #fff;
+  border: 1px solid #E4D9D2;
+  color: #552200; }
+  .news .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .news .yr-headline-title {
+        background: none; } }
+    .news .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .news .yr-headline-title span {
+          padding: 1.2rem;
+          background: #E8D161; } }
+      .news .yr-headline-title span:hover {
+        color: #fff; }
+    .news .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .news .yr-headline-title a {
+          color: #552200; } }
+    .news .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .news .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .news .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .news .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #552200;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .news .yr-headline-title span {
+        padding: 1.2rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 600px) {
+        .news .yr-headline-title span:hover {
+          color: #552200; }
+      .news .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .news .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .news .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .news .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .news .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .news .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #552200;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .news .yr-headline-title span {
+        padding: 1.6rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 1024px) {
+        .news .yr-headline-title span:hover {
+          color: #552200; }
+      .news .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .news .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .news .yr-headline-title :hover {
+        color: #457D00; } }
+  .news ul {
+    padding-top: 2rem;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem; }
+  .news li {
+    list-style: circle; }
+    .news li a {
+      font-size: 1.4rem;
+      padding: 1rem 0;
+      display: block;
+      color: #552200; }
+      .news li a:hover {
+        color: #457D00; }
+    .news li span {
+      margin: 0 1rem;
+      display: block;
+      font-size: 1.2rem;
+      color: #457D00; }
+
+.ads-1, .ads-2, .ads-3 {
+  margin-top: 2.4rem;
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  @media only screen and (min-width: 600px) {
+    .ads-1, .ads-2, .ads-3 {
+      margin: 0;
+      padding-bottom: 2.4rem; } }
+  .ads-1 img, .ads-2 img, .ads-3 img {
+    width: 100%; }
+
+.newest li {
+  list-style: none; }
+
+.article-static {
+  margin: 2.4rem 0;
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+
+.tab-menu li {
+  width: 33.333333%;
+  float: left; }
+  .tab-menu li a {
+    padding: 1.2rem 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #552200;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600; }
+  .tab-menu li :hover {
+    background: #963D02; }
+.tab-menu .active a {
+  background: #963D02; }
+
+.tab-content {
+  margin-top: 1.4rem; }
+  .tab-content li {
+    overflow: hidden;
+    border-bottom: 1px dotted rgba(85, 34, 0, 0.33); }
+    .tab-content li :hover img {
+      opacity: 0.8; }
+    .tab-content li .static-title {
+      padding: 0 1rem; }
+      .tab-content li .static-title a {
+        padding-top: 0.5rem;
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #552200; }
+      .tab-content li .static-title img {
+        width: 25%;
+        float: left; }
+      .tab-content li .static-title span {
+        float: right;
+        width: 70%;
+        margin-top: 0; }
+        .tab-content li .static-title span:hover {
+          color: #457D00; }
+        @media only screen and (min-width: 600px) {
+          .tab-content li .static-title span {
+            margin-top: 1rem; } }
+    .tab-content li:last-child {
+      border-bottom: 1px solid #fff; }
+  .tab-content .tab {
+    display: none; }
+  .tab-content .active {
+    display: block; }
+
+footer {
+  background: #552200; }
+
+.footer-top .yr-main {
+  width: 100%;
+  padding: 0;
+  display: block; }
+  @media only screen and (min-width: 1024px) {
+    .footer-top .yr-main {
+      width: 70%; } }
+.footer-top .yr-sidebar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+  @media only screen and (min-width: 1024px) {
+    .footer-top .yr-sidebar {
+      width: 30%; } }
+
+.footer-col {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 1px solid #963D02; }
+  @media only screen and (min-width: 600px) {
+    .footer-col {
+      width: 33%;
+      margin: 1rem 0;
+      float: left;
+      border: none; } }
+  .footer-col ul {
+    margin-left: 1rem; }
+  .footer-col li {
+    list-style: none;
+    padding: 1rem 0; }
+    .footer-col li a {
+      padding: 1rem 0;
+      color: #fff;
+      font-size: 1.4rem; }
+      .footer-col li a:hover {
+        color: #E8D161; }
+  .footer-col h4 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #E8D161; }
+
+.subcribe {
+  margin: 2rem 0;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .subcribe {
+      text-align: left; } }
+  .subcribe h4 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #E8D161; }
+  .subcribe .search-text {
+    padding: 1rem;
+    color: #552200;
+    background: #E4DDA3;
+    border: none;
+    width: 50%; }
+    @media only screen and (min-width: 600px) {
+      .subcribe .search-text {
+        width: 70%; } }
+  .subcribe .search-su {
+    background: #E8D161;
+    color: #552200;
+    border: none;
+    padding: 1rem; }
+
+.footer-bottom {
+  background: #963D02;
+  position: relative; }
+
+.footer-bottom .yr-main {
+  width: 100%;
+  padding: 0; }
+  @media only screen and (min-width: 600px) {
+    .footer-bottom .yr-main {
+      width: 70%;
+      float: left;
+      padding: 2.5rem; } }
+.footer-bottom .yr-sidebar {
+  width: 100%;
+  padding: 0; }
+  @media only screen and (min-width: 600px) {
+    .footer-bottom .yr-sidebar {
+      width: 30%;
+      float: right;
+      padding: 2.5rem; } }
+
+.nav-bot {
+  padding: 2.4rem 0;
+  font-size: 1.4rem;
+  text-align: center; }
+  .nav-bot li {
+    display: inline;
+    list-style: none; }
+    @media only screen and (min-width: 600px) {
+      .nav-bot li {
+        float: left; } }
+    .nav-bot li a {
+      padding: 0 1rem;
+      color: #fff; }
+
+/*----------------
+      category
+-----------------*/
+.category {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .category .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .category .yr-headline-title {
+        background: none; } }
+    .category .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #552200;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .category .yr-headline-title span {
+          padding: 1.2rem;
+          background: #E8D161; } }
+      .category .yr-headline-title span:hover {
+        color: #552200; }
+    .category .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .category .yr-headline-title a {
+          color: #552200; } }
+    .category .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .category .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .category .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .category .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #552200;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .category .yr-headline-title span {
+        padding: 1.2rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 600px) {
+        .category .yr-headline-title span:hover {
+          color: #552200; }
+      .category .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .category .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .category .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .category .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .category .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .category .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #552200;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .category .yr-headline-title span {
+        padding: 1.6rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 1024px) {
+        .category .yr-headline-title span:hover {
+          color: #552200; }
+      .category .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .category .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .category .yr-headline-title :hover {
+        color: #457D00; } }
+
+.ca-article {
+  margin: 2.4rem 0;
+  background: #F7F7CC; }
+  .ca-article .item-thumb, .ca-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .ca-article .item-content {
+    width: 40%;
+    float: left; }
+  .ca-article .item-content {
+    width: 60%;
+    padding: 1rem 2rem;
+    float: right; }
+    .ca-article .item-content ul {
+      margin-top: 1rem; }
+    .ca-article .item-content p {
+      color: #000; }
+    .ca-article .item-content li {
+      display: block;
+      margin: 1.5rem 0; }
+      .ca-article .item-content li a {
+        padding: 0.5rem;
+        background-color: #E8D161;
+        color: #552200; }
+
+.writer {
+  margin: 1rem 0; }
+  .writer h4 {
+    display: inline;
+    color: #457D00; }
+  .writer a {
+    color: #552200;
+    font-weight: 700; }
+
+.category-bar {
+  background: #552200;
+  padding: 1rem;
+  margin-bottom: 2.4rem; }
+  .category-bar .ca-col {
+    width: 100%; }
+    .category-bar .ca-col ul {
+      width: 90%;
+      margin: 0 auto; }
+    .category-bar .ca-col li {
+      list-style: none;
+      display: block;
+      margin: 1rem 0; }
+      .category-bar .ca-col li a {
+        width: 100%;
+        padding: 1rem 0;
+        color: #fff; }
+        .category-bar .ca-col li a:hover {
+          color: #457D00; }
+    .category-bar .ca-col h4 {
+      color: #E8D161;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(232, 209, 97, 0.15); }
+
+/*----------------
+      maker
+-----------------*/
+.maker-wrap img, .maker-old-wrap img {
+  transition: 0.4s all; }
+  .maker-wrap img:hover, .maker-old-wrap img:hover {
+    border-radius: 50%; }
+  @media only screen and (min-width: 1024px) {
+    .maker-wrap img:hover, .maker-old-wrap img:hover {
+      border-radius: 0; } }
+
+.maker {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .maker .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .maker .yr-headline-title {
+        background: none; } }
+    .maker .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .maker .yr-headline-title span {
+          padding: 1.2rem;
+          background: #BF082E; } }
+      .maker .yr-headline-title span:hover {
+        color: #fff; }
+    .maker .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .maker .yr-headline-title a {
+          color: #552200; } }
+    .maker .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .maker .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .maker .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .maker .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .maker .yr-headline-title span {
+        padding: 1.2rem;
+        background: #BF082E; } }
+  @media only screen and (min-width: 600px) {
+        .maker .yr-headline-title span:hover {
+          color: #fff; }
+      .maker .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .maker .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .maker .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .maker .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .maker .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .maker .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .maker .yr-headline-title span {
+        padding: 1.6rem;
+        background: #BF082E; } }
+  @media only screen and (min-width: 1024px) {
+        .maker .yr-headline-title span:hover {
+          color: #fff; }
+      .maker .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .maker .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .maker .yr-headline-title :hover {
+        color: #457D00; } }
+
+.maker-wrap, .maker-old-wrap {
+  margin: 2.4rem 0; }
+
+.maker-article {
+  width: 100%;
+  display: block;
+  padding: 1rem; }
+  .maker-article .static {
+    margin: 3rem 0;
+    text-align: center; }
+    .maker-article .static span {
+      margin-right: 2rem;
+      padding: 1rem;
+      background: #552200;
+      color: #fff;
+      border-radius: 5px; }
+      .maker-article .static span:hover {
+        color: #E8D161; }
+  @media only screen and (min-width: 600px) {
+    .maker-article {
+      width: 40%;
+      float: left;
+      margin-left: 6.5%; } }
+
+.maker-old {
+  background: #fff;
+  border: 1px solid #E4D9D2;
+  margin: 2.4rem 0; }
+  .maker-old .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .maker-old .yr-headline-title {
+        background: none; } }
+    .maker-old .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .maker-old .yr-headline-title span {
+          padding: 1.2rem;
+          background: #552200; } }
+      .maker-old .yr-headline-title span:hover {
+        color: #fff; }
+    .maker-old .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .maker-old .yr-headline-title a {
+          color: #552200; } }
+    .maker-old .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .maker-old .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .maker-old .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .maker-old .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .maker-old .yr-headline-title span {
+        padding: 1.2rem;
+        background: #552200; } }
+  @media only screen and (min-width: 600px) {
+        .maker-old .yr-headline-title span:hover {
+          color: #fff; }
+      .maker-old .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .maker-old .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .maker-old .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .maker-old .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .maker-old .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .maker-old .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .maker-old .yr-headline-title span {
+        padding: 1.6rem;
+        background: #552200; } }
+  @media only screen and (min-width: 1024px) {
+        .maker-old .yr-headline-title span:hover {
+          color: #fff; }
+      .maker-old .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .maker-old .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .maker-old .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 600px) {
+    .maker-old {
+      margin: 4.8rem 0; } }
+
+.maker-old-article {
+  width: 100%;
+  display: block;
+  padding: 1rem; }
+  @media only screen and (min-width: 600px) {
+    .maker-old-article {
+      width: 30%;
+      float: left;
+      margin-left: 2.5%; } }
+  .maker-old-article .static {
+    margin: 3rem 0;
+    text-align: center; }
+    .maker-old-article .static span {
+      margin-right: 2rem;
+      padding: 1rem;
+      background: #552200;
+      color: #fff;
+      border-radius: 5px; }
+      @media only screen and (min-width: 600px) {
+        .maker-old-article .static span {
+          margin-right: 1rem; } }
+      .maker-old-article .static span:hover {
+        color: #E8D161; }
+
+/*----------------
+      susume page
+-----------------*/
+.susume-list {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .susume-list .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .susume-list .yr-headline-title {
+        background: none; } }
+    .susume-list .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .susume-list .yr-headline-title span {
+          padding: 1.2rem;
+          background: #457D00; } }
+      .susume-list .yr-headline-title span:hover {
+        color: #fff; }
+    .susume-list .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .susume-list .yr-headline-title a {
+          color: #552200; } }
+    .susume-list .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .susume-list .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .susume-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .susume-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .susume-list .yr-headline-title span {
+        padding: 1.2rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 600px) {
+        .susume-list .yr-headline-title span:hover {
+          color: #fff; }
+      .susume-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .susume-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .susume-list .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .susume-list .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .susume-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .susume-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .susume-list .yr-headline-title span {
+        padding: 1.6rem;
+        background: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+        .susume-list .yr-headline-title span:hover {
+          color: #fff; }
+      .susume-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .susume-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .susume-list .yr-headline-title :hover {
+        color: #457D00; } }
+  .susume-list .yr-headline-title {
+    text-align: right; }
+    @media only screen and (min-width: 600px) {
+      .susume-list .yr-headline-title {
+        text-align: right; } }
+    @media only screen and (min-width: 1024px) {
+      .susume-list .yr-headline-title {
+        text-align: center; } }
+
+.susume-wrap, .video-wrap, .vietnam-wrap {
+  padding: 1rem; }
+
+.susume-article, .video-article, .vietnam-article {
+  margin: 2.4rem 0; }
+  .susume-article .item-thumb, .video-article .item-thumb, .vietnam-article .item-thumb, .susume-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .susume-article .item-content, .video-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .video-article .item-content, .vietnam-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .vietnam-article .item-content {
+    width: 100%;
+    display: block; }
+    @media only screen and (min-width: 600px) {
+      .susume-article .item-thumb, .video-article .item-thumb, .vietnam-article .item-thumb, .susume-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .susume-article .item-content, .video-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .video-article .item-content, .vietnam-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .vietnam-article .item-content {
+        width: 30%;
+        float: left; } }
+  .susume-article .item-content, .video-article .item-content, .vietnam-article .item-content {
+    width: 100%;
+    padding: 1rem; }
+    @media only screen and (min-width: 600px) {
+      .susume-article .item-content, .video-article .item-content, .vietnam-article .item-content {
+        width: 70%;
+        float: left; } }
+
+/*----------------
+      ranking  page
+-----------------*/
+.ranking-list {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .ranking-list .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .ranking-list .yr-headline-title {
+        background: none; } }
+    .ranking-list .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .ranking-list .yr-headline-title span {
+          padding: 1.2rem;
+          background: #552200; } }
+      .ranking-list .yr-headline-title span:hover {
+        color: #fff; }
+    .ranking-list .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .ranking-list .yr-headline-title a {
+          color: #552200; } }
+    .ranking-list .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .ranking-list .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .ranking-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .ranking-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .ranking-list .yr-headline-title span {
+        padding: 1.2rem;
+        background: #552200; } }
+  @media only screen and (min-width: 600px) {
+        .ranking-list .yr-headline-title span:hover {
+          color: #fff; }
+      .ranking-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .ranking-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .ranking-list .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .ranking-list .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .ranking-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .ranking-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .ranking-list .yr-headline-title span {
+        padding: 1.6rem;
+        background: #552200; } }
+  @media only screen and (min-width: 1024px) {
+        .ranking-list .yr-headline-title span:hover {
+          color: #fff; }
+      .ranking-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .ranking-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .ranking-list .yr-headline-title :hover {
+        color: #457D00; } }
+
+.ranking-wrap {
+  margin: 2.4rem 0;
+  padding: 1rem;
+  width: 100%;
+  display: block; }
+  @media only screen and (min-width: 600px) {
+    .ranking-wrap {
+      width: 45%;
+      float: left;
+      margin-left: 2rem; } }
+  .ranking-wrap .ranking-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background: #552200;
+    color: #fff;
+    text-align: center; }
+  .ranking-wrap .ranking-number {
+    margin: 2.4rem 0; }
+    .ranking-wrap .ranking-number img {
+      transition: 0.4s all; }
+      .ranking-wrap .ranking-number img:hover {
+        border-radius: 10px;
+        opacity: 0.8; }
+    .ranking-wrap .ranking-number .item-thumb, .ranking-wrap .ranking-number .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .ranking-wrap .ranking-number .item-content {
+      width: 30%;
+      float: left;
+      position: relative; }
+      .ranking-wrap .ranking-number .item-thumb .ranks, .ranking-wrap .ranking-number .ranking .yr-ranking-article li .item-content .ranks, .ranking .yr-ranking-article li .ranking-wrap .ranking-number .item-content .ranks {
+        position: absolute;
+        top: -20px;
+        left: -10px; }
+    .ranking-wrap .ranking-number .hai {
+      width: 20%;
+      margin-left: 2rem; }
+    .ranking-wrap .ranking-number .item-content {
+      width: 70%;
+      float: right;
+      padding-left: 1rem; }
+    .ranking-wrap .ranking-number .hai-content h4 {
+      font-size: 1.4rem; }
+    .ranking-wrap .ranking-number .hai-content .writer {
+      font-size: 1.4rem; }
+
+/*----------------
+    video page
+-----------------*/
+.video-list {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .video-list .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .video-list .yr-headline-title {
+        background: none; } }
+    .video-list .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .video-list .yr-headline-title span {
+          padding: 1.2rem;
+          background: #BF082E; } }
+      .video-list .yr-headline-title span:hover {
+        color: #fff; }
+    .video-list .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .video-list .yr-headline-title a {
+          color: #552200; } }
+    .video-list .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .video-list .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .video-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .video-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .video-list .yr-headline-title span {
+        padding: 1.2rem;
+        background: #BF082E; } }
+  @media only screen and (min-width: 600px) {
+        .video-list .yr-headline-title span:hover {
+          color: #fff; }
+      .video-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .video-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .video-list .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .video-list .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .video-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .video-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .video-list .yr-headline-title span {
+        padding: 1.6rem;
+        background: #BF082E; } }
+  @media only screen and (min-width: 1024px) {
+        .video-list .yr-headline-title span:hover {
+          color: #fff; }
+      .video-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .video-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .video-list .yr-headline-title :hover {
+        color: #457D00; } }
+
+.video-article .item-thumb, .video-article .ranking .yr-ranking-article li .item-content, .ranking .yr-ranking-article li .video-article .item-content {
+  position: relative;
+  z-index: 10;
+  filter: brightness(90%) contrast(70%);
+  transition: 0.4s all; }
+  .video-article .item-thumb:hover, .video-article .ranking .yr-ranking-article li .item-content:hover, .ranking .yr-ranking-article li .video-article .item-content:hover {
+    filter: brightness(100%) contrast(110%); }
+    .video-article .item-thumb:hover .video-icon, .video-article .ranking .yr-ranking-article li .item-content:hover .video-icon, .ranking .yr-ranking-article li .video-article .item-content:hover .video-icon {
+      transform: rotate3d(1, 0, 1, 180deg); }
+  .video-article .item-thumb img, .video-article .ranking .yr-ranking-article li .item-content img, .ranking .yr-ranking-article li .video-article .item-content img {
+    border-radius: 5px; }
+  .video-article .item-thumb .video-icon, .video-article .ranking .yr-ranking-article li .item-content .video-icon, .ranking .yr-ranking-article li .video-article .item-content .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    transition: 0.4s all; }
+
+/*----------------
+vietnam food page
+-----------------*/
+.vietnam-list {
+  background: #fff;
+  border: 1px solid #E4D9D2; }
+  .vietnam-list .yr-headline-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background: #552200; }
+    @media only screen and (min-width: 600px) {
+      .vietnam-list .yr-headline-title {
+        background: none; } }
+    .vietnam-list .yr-headline-title span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem;
+      color: #E8D161;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 600px) {
+        .vietnam-list .yr-headline-title span {
+          padding: 1.2rem;
+          background: #E8D161; } }
+      .vietnam-list .yr-headline-title span:hover {
+        color: #E8D161; }
+    .vietnam-list .yr-headline-title a {
+      color: #fff; }
+      @media only screen and (min-width: 600px) {
+        .vietnam-list .yr-headline-title a {
+          color: #552200; } }
+    .vietnam-list .yr-headline-title :hover {
+      color: #457D00; }
+  @media only screen and (min-width: 600px) {
+    .vietnam-list .yr-headline-title {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .vietnam-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 600px) {
+      .vietnam-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #BF082E;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .vietnam-list .yr-headline-title span {
+        padding: 1.2rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 600px) {
+        .vietnam-list .yr-headline-title span:hover {
+          color: #BF082E; }
+      .vietnam-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 600px) and (min-width: 600px) {
+      .vietnam-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 600px) {
+      .vietnam-list .yr-headline-title :hover {
+        color: #457D00; } }
+  @media only screen and (min-width: 1024px) {
+    .vietnam-list .yr-headline-title {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      background: #552200; } }
+  @media only screen and (min-width: 1024px) and (min-width: 600px) {
+    .vietnam-list .yr-headline-title {
+      background: none; } }
+  @media only screen and (min-width: 1024px) {
+      .vietnam-list .yr-headline-title span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 1rem;
+        color: #BF082E;
+        font-size: 1.2rem;
+        text-transform: capitalize; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .vietnam-list .yr-headline-title span {
+        padding: 1.6rem;
+        background: #E8D161; } }
+  @media only screen and (min-width: 1024px) {
+        .vietnam-list .yr-headline-title span:hover {
+          color: #BF082E; }
+      .vietnam-list .yr-headline-title a {
+        color: #fff; } }
+    @media only screen and (min-width: 1024px) and (min-width: 600px) {
+      .vietnam-list .yr-headline-title a {
+        color: #552200; } }
+  @media only screen and (min-width: 1024px) {
+      .vietnam-list .yr-headline-title :hover {
+        color: #457D00; } }
+  .vietnam-list .yr-headline-title {
+    text-align: right; }
+    .vietnam-list .yr-headline-title a {
+      color: #ffc300;
+      position: relative; }
+      @media only screen and (min-width: 600px) {
+        .vietnam-list .yr-headline-title a {
+          color: #BF082E; } }
+    .vietnam-list .yr-headline-title img {
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      left: 59%;
+      transform: translateY(-50%); }
+      @media only screen and (min-width: 600px) {
+        .vietnam-list .yr-headline-title img {
+          left: 64%; } }
+      .vietnam-list .yr-headline-title img :before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        padding: 0.5rem;
+        background: blue; }
+    @media only screen and (min-width: 600px) {
+      .vietnam-list .yr-headline-title {
+        text-align: center; } }
+    @media only screen and (min-width: 1024px) {
+      .vietnam-list .yr-headline-title {
+        text-align: center; } }
+
+.vietnam-article .writer {
+  font-size: 1.4rem; }
+
+/*----------------
+other
+-----------------*/
+.scrolltop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 1rem;
+  background: #552200;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .scrolltop {
+      right: 5rem;
+      bottom: 5rem; } }
+  .scrolltop [data-icon]:before {
+    font-size: 3.6rem;
+    color: #fff; }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 2.4rem 0;
+  text-align: center; }
+
+@-ms-viewport {
+  width: device-width; }
+
+/*# sourceMappingURL=style.css.map */
